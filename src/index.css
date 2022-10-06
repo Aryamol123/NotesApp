@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+body {
+  font-family: "Acme", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 968px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  min-height: 100vh;
+}
+
+.dark-mode {
+  background-color: black;
+}
+.dark-mode h1 {
+  color: white;
+}
+.dark-mode .toggle {
+  background-color: rgba(255, 255, 255, 0.37);
+}
+.dark-mode .toggle:hover {
+  background-color: rgba(255, 255, 255, 0.479);
+}
+
+.note {
+  background-color: coral;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 1rem;
+  min-height: 170px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  white-space: pre-wrap;
+}
+.note.new {
+  background-color: rgb(163, 48, 9);
+}
+.note textarea {
+  border: none;
+  resize: none;
+  background-color: rgb(163, 48, 9);
+}
+.note textarea:focus {
+  outline: none;
+}
+.note .delete {
+  color: rgb(34, 39, 39);
+  font-size: 17px;
+}
+.note .delete:hover {
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.save, .toggle {
+  background-color: rgba(19, 10, 10, 0.7411764706);
+  border: none;
+  border-radius: 15px;
+  padding: 5px 10px 5px 10px;
+  color: white;
+  font-size: 15px;
+}
+.save:hover, .toggle:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
+::-moz-placeholder {
+  font-family: "Acme", sans-serif;
+}
+
+:-ms-input-placeholder {
+  font-family: "Acme", sans-serif;
+}
+
+::placeholder, .save, .toggle {
+  font-family: "Acme", sans-serif;
+}
+
+.note-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notes-list {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  background-color: rgb(233, 233, 233);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 1.5em;
+}
+.search input {
+  border: none;
+  background-color: rgb(233, 233, 233);
+  font-family: "Acme", sans-serif;
+  margin-left: 5px;
+}
+.search input:focus {
+  outline: none;
+}
+
+.dark-color {
+  background-color: black;
+}/*# sourceMappingURL=index.css.map */
